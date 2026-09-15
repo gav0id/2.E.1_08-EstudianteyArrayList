@@ -1,1 +1,40 @@
+import java.util.ArrayList;
+public class Estudiante {
+    String nombre;
+    public ArrayList<Double> calificaciones;
+
+    public Estudiante(String nombre) {
+        this.nombre = nombre;
+        this.calificaciones = new ArrayList<>();
+    }
+    public void agregarNota(double nota){
+        if (nota >= 0 && nota <= 10) {
+            calificaciones.add(nota);
+        }
+    }
+    public double calcularPromedio() {
+        double suma = 0.0;
+        for (double nota : calificaciones) {
+            suma = suma + nota;
+        }
+        return suma / calificaciones.size();
+    }
+    public boolean haAprobado(){
+        if (calcularPromedio() >= 6.0 ){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public static void main(String[] args){
+        Estudiante e1 = new Estudiante("Benito");
+        e1.agregarNota(8.5);
+        e1.agregarNota(7.6);
+        e1.agregarNota(6.7);
+        e1.agregarNota(9.5);
+        e1.agregarNota(15.0);
+        System.out.println(e1.nombre + ", su promedio es: " + e1.calcularPromedio());
+        System.out.println("¿Aprobó?: " + e1.haAprobado());
+    }
+}
 
