@@ -16,4 +16,5 @@ Dentro del método `main`, desarrollé la siguiente lógica de prueba:
 3. Imprimí por consola el promedio final y el estado de aprobación para verificar que los cálculos iterativos y las condiciones devuelven los resultados esperados.
 
 Ejecución en consola
-<img width="1366" height="716" alt="imagen" src="https://github.com/user-attachments/assets/10afe93c-e88e-45f8-9598-6201a0147f9a" />
+<img width="1366" height="722" alt="imagen" src="https://github.com/user-attachments/assets/428b3b40-6c0a-41ed-be9e-eeb3c0ce70ad" />
+
