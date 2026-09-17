@@ -26,6 +26,9 @@ public class Estudiante {
             return false;
         }
     }
+}
+
+public class Main {
     public static void main(String[] args){
         Estudiante e1 = new Estudiante("Benito");
         e1.agregarNota(8.5);
@@ -37,4 +40,3 @@ public class Estudiante {
         System.out.println("¿Aprobó?: " + e1.haAprobado());
     }
 }
-
